@@ -12,7 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var myLabel: NSTextField!
 
+    @IBAction func buttonClicked(sender: AnyObject) {
+        myLabel.stringValue = "Hi!"
+    }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
