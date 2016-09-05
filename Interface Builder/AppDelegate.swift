@@ -13,7 +13,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var myLabel: NSTextField!
+    @IBOutlet weak var testLabel: NSTextField!
     var name:String = "{not set}"
+    var name2:String = "Testing..."
     
     @IBAction func buttonClicked(sender: AnyObject) {
         myLabel.stringValue = "Hi!"
@@ -22,6 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
         myLabel.stringValue = name
+        testLabel.stringValue = name2
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
